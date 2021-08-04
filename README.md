@@ -19,7 +19,7 @@ In this project, I created the tables (6) to hold data in the CSVs, import the C
 
 Inspected the CSVs and create the ERD and using a tool at [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
-![](images/ERD.png)
+ ![](images/ERD.png)
 
 #### Data Engineering
 
