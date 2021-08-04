@@ -68,10 +68,10 @@ I completed the database as following:
 
 3. Created a bar chart of average salary by title. Title staff earns more than other title. 
 
-![](images/1.PNG)
+ ![](images/averagesalary.png)
 
 4. Create a histogram to visualize the most common salary ranges for employees based on the title. More staff earns around $40k, while salay is increasing, staff number is decreasing.
 
-![](images/2.PNG)
+ ![](images/Salaryrange.png)
 
 
