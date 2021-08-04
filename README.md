@@ -19,7 +19,7 @@ In this project, I created the tables (6) to hold data in the CSVs, import the C
 
 Inspected the CSVs and create the ERD and using a tool at [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
-![](Images/ERD.png)
+ ![](Images/ERD.PNG)
 
 #### Data Engineering
 
@@ -67,9 +67,11 @@ I completed the database as following:
 2. Joined the employees and salaries based on employee number and joined titles tables based on title id. I turned it to the Dataframe and group them by title. 
 
 3. Created a bar chart of average salary by title. Title staff earns more than other title. 
-​![](Images/1.PNG)
 
-4. Create a histogram to visualize the most common salary ranges for employees based on the title. More staff earns around $40k, while salay is increasing, staff number is decreasing. 
+![](Images/1.PNG)
+
+4. Create a histogram to visualize the most common salary ranges for employees based on the title. More staff earns around $40k, while salay is increasing, staff number is decreasing.
+
 ![](Images/2.PNG)
 
 
