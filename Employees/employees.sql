@@ -75,31 +75,31 @@ SELECT * FROM Salaries;
 --SELECT COUNT(emp_no) FROM employee;
 
 -- QUERIES
--- 1
+-- 1 -- Salary by employee
 SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary
 FROM employee e, salaries s
 WHERE s.emp_no = e.emp_no
 ORDER BY e.emp_no;
--- 2
+-- 2-- Employees hired in 1986
 SELECT first_name, last_name, hire_date 
 FROM employees 
 WHERE hire_date >= '1986-01-01' AND hire_date <= '1986-12-31'
 ORDER BY hire_date;
--- 3
+-- 3-- Manager of each department
 SELECT d.dept_no, dp.dept_name, d.emp_no, e.last_name, e.first_name
 FROM departmentmanager d, employees e, department dp
 where d.emp_no = e.emp_no and d.dept_no = dp.dept_no;
--- 4
+-- 4-- Department of each employee
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 FROM departmentemployee de, employee e, department d
 WHERE de.emp_no = e.emp_no AND de.dept_no = d.dept_no
 ORDER BY e.emp_no;
--- 5
+-- 5-- Employees whose first name is "Hercules" and last name begins with "B"
 SELECT * FROM employees
 WHERE first_name = 'Hercules'
 AND last_name LIKE 'B%'
 ORDER BY last_name;
--- 6
+-- 6-- Employees in the Sales department
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 FROM departmentemployee de
 JOIN employees e
@@ -107,7 +107,7 @@ ON (e.emp_no = de.emp_no)
 JOIN department d
 ON (d.dept_no = de.dept_no)
 WHERE d.dept_name = 'Sales';
--- 7
+-- 7-- Employees in Sales and Development departments
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 FROM departmentemployee de
 JOIN employees e
@@ -115,7 +115,7 @@ ON (e.emp_no = de.emp_no)
 JOIN department d
 ON (d.dept_no = de.dept_no)
 WHERE d.dept_name = 'Development' OR d.dept_name = 'Sales';
--- 8
+-- 8-- The frequency of employee last names
 SELECT last_name,
 COUNT(last_name) AS "last_name_freq"
 FROM employees
